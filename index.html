@@ -895,165 +895,128 @@
         }
         
         /* ===== CONTACT SECTION ===== */
-        #contact {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px;
-        }
-        
-        .contact-info {
-            background: var(--glass);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(0, 240, 255, 0.1);
-        }
-        
-        .contact-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-        
-        .contact-info p {
-            margin-bottom: 30px;
-        }
-        
-        .contact-details {
-            margin-bottom: 30px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        
-        .contact-item i {
-            width: 40px;
-            height: 40px;
-            background: rgba(0, 240, 255, 0.1);
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 15px;
-            font-size: 1rem;
-        }
-        
-        .contact-item span {
-            font-size: 0.9rem;
-        }
-        
-        .contact-social {
-            display: flex;
-        }
-        
-        .contact-social a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(0, 240, 255, 0.1);
-            color: var(--primary);
-            border-radius: 50%;
-            margin-right: 10px;
-            transition: var(--transition);
-        }
-        
-        .contact-social a:hover {
-            background: var(--primary);
-            color: var(--dark);
-            transform: translateY(-5px);
-            box-shadow: var(--neon-glow);
-        }
-        
-        .contact-form {
-            background: var(--glass);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(0, 240, 255, 0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-            color: var(--primary);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(0, 240, 255, 0.2);
-            border-radius: 5px;
-            color: var(--light);
-            font-family: inherit;
-            transition: var(--transition);
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            color: var(--dark);
-            border: none;
-            padding: 12px 30px;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 240, 255, 0.4);
-        }
-        
-        .submit-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
-            transform: translateX(-100%);
-            transition: 0.5s;
-        }
-        
-        .submit-btn:hover::before {
-            transform: translateX(100%);
-        }
+            #contact {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .contact-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 50px;
+            }
+            
+            .contact-info {
+                background: var(--glass);
+                backdrop-filter: blur(10px);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+                border: 1px solid rgba(0, 240, 255, 0.1);
+            }
+            
+            .contact-info h3 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                color: var(--primary);
+            }
+            
+            .contact-info p {
+                margin-bottom: 30px;
+            }
+            
+            .contact-details {
+                margin-bottom: 30px;
+            }
+            
+            .contact-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+            
+            .contact-item i {
+                width: 40px;
+                height: 40px;
+                background: rgba(0, 240, 255, 0.1);
+                color: var(--primary);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 15px;
+                font-size: 1rem;
+            }
+            
+            .contact-item span {
+                font-size: 0.9rem;
+            }
+            
+            .contact-social {
+                display: flex;
+            }
+            
+            .contact-social a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background: rgba(0, 240, 255, 0.1);
+                color: var(--primary);
+                border-radius: 50%;
+                margin-right: 10px;
+                transition: var(--transition);
+            }
+            
+            .contact-social a:hover {
+                background: var(--primary);
+                color: var(--dark);
+                transform: translateY(-5px);
+                box-shadow: var(--neon-glow);
+            }
+            
+            .live-code-container {
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  color: #00ffff;
+  font-family: 'Courier New', monospace;
+}
+
+.code-box {
+  background-color: #1a1a1a;
+  border: 1px solid #00ffff30;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 200px;
+  font-size: 15px;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+  color: #00ffee;
+  white-space: pre-wrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.code-box::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #00ffee;
+  margin-left: 5px;
+  animation: blink 0.7s steps(1) infinite;
+  position: absolute;
+  bottom: 20px;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
         
         /* ===== FOOTER ===== */
         footer {
@@ -1312,8 +1275,10 @@
 
                 </div>
                 <div class="social-links">
+                    
                     <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/dammjet/?next=%2F"><i class="fab fa-instagram" target="_blank" ></i></a>
+<a href="https://mail.google.com/mail/?view=cm&to=mihyaulumiddin2008@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+               <a href="https://www.instagram.com/dammjet/?next=%2F"><i class="fab fa-instagram" target="_blank" ></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
@@ -1399,7 +1364,7 @@
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                    
+                        
                         <h3>Proyek Pribadi</h3>
                         <h4>Pengembang Web Independen</h4>
                         <p>Membangun berbagai proyek pribadi untuk belajar teknologi web modern seperti React.js, Node.js, dan berbagai framework CSS.</p>
@@ -1409,6 +1374,7 @@
                 
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
+                        
                         <h3>Pembelajaran Mandiri</h3>
                         <h4>Platform Online</h4>
                         <p>Belajar secara otodidak melalui platform seperti Dicoding, Progate, dan FreeCodeCamp, saya fokus mendalami HTML, CSS, dan JavaScript untuk membangun dasar yang kuat dalam pengembangan web.</p>
@@ -1418,7 +1384,7 @@
                 
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                    
+                        
                        <h3>Ekstrakurikuler Sekolah</h3>
 <h4>Tim IT Sekolah</h4>
 <p>Berperan sebagai anggota yang membantu menyelesaikan tugas-tugas pengembangan web sekolah sesuai arahan guru, sambil terus belajar dan mengasah kemampuan teknis.</p>
@@ -1611,34 +1577,20 @@
                     
                     <div class="contact-social">
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=mihyaulumiddin2008@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+
                         <a href="https://www.instagram.com/dammjet/?next=%2F"><i class="fab fa-instagram" target="_blank" ></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="myForm">
-                        <div class="form-group">
-                            <label for="name">Nama Anda</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subjek</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Pesan</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Kirim Pesan</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+                <div class="live-code-container" data-aos="fade-left">
+  <h3>&lt;Live Coding Console /&gt;</h3>
+  <div class="code-box">
+    <pre><code id="typewriter"></code></pre>
+  </div>
+</div>
+
     </section>
 
     <!-- ===== FOOTER ===== -->
@@ -1658,6 +1610,8 @@
                 
                 <div class="footer-social">
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=mihyaulumiddin2008@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+
                      <a href="https://www.instagram.com/dammjet/?next=%2F"><i class="fab fa-instagram" target="_blank" ></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
@@ -1781,15 +1735,49 @@
         });
 
         // ===== FORM VALIDATION =====
-        const form = document.getElementById('myForm');
-        
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Form validation would go here
-            alert('Pesan berhasil dikirim! (Ini hanya contoh)');
-            form.reset();
-        });
+          const codeLines = [
+    "const damiano = {",
+    "  name: 'Damiano Dev',",
+    "  age: 16,",
+    "  location: 'Jakarta, Indonesia',",
+    "  skills: ['HTML', 'CSS', 'JavaScript'],",
+    "  hobby: 'Ngoding dan ngulik UI/UX'",
+    "};",
+    "",
+    "console.log('Halo, saya Damiano 👋');",
+    "console.log('Selamat datang di portfolio saya!');"
+  ];
+
+  const typeTarget = document.getElementById("typewriter");
+
+  let line = 0;
+  let char = 0;
+
+  function typeLineLoop() {
+    if (line < codeLines.length) {
+      if (char < codeLines[line].length) {
+        typeTarget.innerHTML += codeLines[line][char];
+        char++;
+        setTimeout(typeLineLoop, 30);
+      } else {
+        typeTarget.innerHTML += "\n";
+        line++;
+        char = 0;
+        setTimeout(typeLineLoop, 300);
+      }
+    } else {
+      setTimeout(() => {
+        typeTarget.innerHTML = ""; // reset terminal
+        line = 0;
+        char = 0;
+        typeLineLoop(); // restart
+      }, 1500); // jeda sebelum ulang lagi
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    typeLineLoop(); // langsung jalan tanpa harus scroll
+  });
 
         // ===== SKILL BAR ANIMATION =====
         function animateSkills() {
